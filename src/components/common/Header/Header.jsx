@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Header.css";
 import laderaVerdeLogo from "/img/ladera-verder-logo.png"
+import { Link } from "react-router-dom";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -36,13 +37,13 @@ const Header = () => {
                 <nav className="aside-menu__navigation">
                     <ul className="aside-menu__list">
                         <li className="aside-menu__list-item">
-                            <a href="" className="aside-menu__link">Home</a>
+                            <Link to={"/home"} className="aside-menu__link">Home</Link>
                         </li>
                         <li className="aside-menu__list-item">
-                            <a href="" className="aside-menu__link">Dashboard</a>
+                            <Link to={"/dashboard"} className="aside-menu__link">Dashboard</Link>
                         </li>
                         <li className="aside-menu__list-item">
-                            <a href="" className="aside-menu__link">Booking</a>
+                            <Link to={"/booking"} className="aside-menu__link">Booking</Link>
                         </li>
                     </ul>
                 </nav>

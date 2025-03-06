@@ -26,23 +26,29 @@
 .header__button{
     width: 35px;
     height: 35px;
+    color: black;
 }
 
-.aside-menu{
+.aside-menu {
     width: 250px;
     height: 100vh;
     position: absolute;
     top: 0;
     right: 0;
     background-color: rgb(0, 0, 0);
-    display: none;
     color: white;
-}
-
-.--open-menu{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transform: translateX(100%); /* Inicialmente oculto */
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+
+.--open-menu{
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .aside-menu__close-btn{
@@ -79,6 +85,9 @@
 }
 
 .aside-menu__list-item{
+}
+
+.aside-menu__link{
     width: 220px;
     height: 40px;
     border: 2px solid white;
@@ -86,23 +95,19 @@
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    transition: ease-in-out 0.5ms;
-}
-
-.aside-menu__list-item:hover, 
-.aside-menu__list-item:hover a{
-    background-color: white;
-    color: black;
-}
-
-.aside-menu__link{
+    transition: ease-in-out 0.3s;
     text-decoration: none;
     color: white;
+}
+
+.aside-menu__link:hover{
+    background-color: white;
+    color: black;
 }
 
 .aside-menu__address{
     position: absolute;
     bottom: 0;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     font-size: 13px;
 }
