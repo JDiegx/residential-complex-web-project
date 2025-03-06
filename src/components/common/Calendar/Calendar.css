@@ -1,0 +1,13 @@
+.calendar-table__table-head {
+  display: flex;
+}
+
+.calendar-table__days {
+  width: 70px;
+  height: 30px;
+  padding: 0px 20px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
