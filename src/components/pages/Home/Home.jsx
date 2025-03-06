@@ -4,8 +4,7 @@ import Calendar from "../../common/Calendar/Calendar.jsx"
 
 const Home = () => {
     return (
-        <div>
-            <Calendar />
+        <div className='home'>
         </div>
     )
 }
