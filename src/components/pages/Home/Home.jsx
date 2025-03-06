@@ -1,12 +1,12 @@
 import React from 'react'
 import "./Home.css"
-import Calendar from '../../common/Calendar/Calendar'
+import Header from '../../common/Header/Header'
 
 const Home = () => {
     return (
         <div>
+            <Header />
             <p>Home</p>
-            <Calendar />
         </div>
     )
 }

@@ -1,6 +1,6 @@
 
 export const calendar = [
-    ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Lunes"],
+    ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
     [
         "10:00 - 11:00",
         "11:00 - 12:00",

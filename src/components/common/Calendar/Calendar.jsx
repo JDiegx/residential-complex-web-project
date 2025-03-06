@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import "./Calendar.css"
-import { calendar } from '../../../database/data'
+import { calendar } from '../../../data/data'
 
 const Calendar = () => {
     const [days, setDays] = useState(calendar[0])
