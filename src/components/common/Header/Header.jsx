@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./header.css";
+import "./Header.css";
 import laderaVerdeLogo from "/img/ladera-verder-logo.png"
 
 const Header = () => {
