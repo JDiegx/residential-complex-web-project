@@ -14,21 +14,25 @@ const Calendar = () => {
     return (
         <table className='calendar-table'>
             <thead className='calendar-table__table-head'>
-                {
-                    days.map((day) => {
-                        return (
-                            <tr className='calendar-table__days' key={day}>
-                                <th> {day}</th>
-                            </tr>
-                        )
-                    })
-                }
+                <tr className='calendar-table__days'>
+                    <th className='calendar-table-day' >Hours</th>
+                    {days.map((day, i) => <th className='calendar-table-day' key={i}>{day}</th>)}
+                </tr>
             </thead>
-            <tbody>
+            <tbody className='calendar-table__table-body'>
                 {
-                    hours.map((hour) => <tr key={hour} >
-                        <th>{hour}</th>
-                    </tr>)
+                    hours.map((hour) =>
+                        <tr className='calendar-table__hours' key={hour} >
+                            <td className='calendar-table-hour'>{hour}</td>
+                            {
+                                days.map((i) =>
+                                    <td key={i} className='calendar-table-hour'>
+                                        <button>Reservar</button>
+                                    </td>
+                                )
+                            }
+                        </tr>
+                    )
                 }
             </tbody>
         </table>
