@@ -18,12 +18,12 @@ const Header = () => {
                     xmlns="http://www.w3.org/2000/svg"
                     width="16"
                     height="16"
-                    fill="currentColor"
-                    class="header__button"
+                    fillRule="currentColor"
+                    className="header__button"
                     viewBox="0 0 16 16"
                 >
                     <path
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
                     />
                 </svg>
@@ -37,7 +37,7 @@ const Header = () => {
                 <nav className="aside-menu__navigation">
                     <ul className="aside-menu__list">
                         <li className="aside-menu__list-item">
-                            <Link to={"/home"} className="aside-menu__link">Home</Link>
+                            <Link to={"/"} className="aside-menu__link">Home</Link>
                         </li>
                         <li className="aside-menu__list-item">
                             <Link to={"/dashboard"} className="aside-menu__link">Dashboard</Link>

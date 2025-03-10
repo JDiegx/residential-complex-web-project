@@ -1,0 +1,55 @@
+.home{
+    width: 100%;
+    height: 600px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    overflow: hidden;
+}
+
+.home__content{
+    width: 100%;
+    height: 350px;
+    padding: 0px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.home__description{
+    color: rgba(87, 87, 87, 0.466);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.home__title{
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.home__button{
+    width: 270px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    margin-top: 20px;
+    border: 3px solid black;
+    font-weight: 600;
+    transition: ease-in-out 0.3s;
+}
+
+.home__button:hover{
+    background-color: white;
+    color: black;
+}
+
+.home__image{
+    width:  400px;
+    height: 250px;
+    background-image: url(/img/ladera-verde-residential-complex-image.png);
+    background-position: center;
+    background-size: cover;
+}
