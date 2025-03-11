@@ -1,8 +1,11 @@
 import React from 'react'
+import Calendar from "../../common/Calendar/Calendar"
 
 const Booking = () => {
   return (
-    <div>Booking</div>
+    <>
+    <Calendar />
+    </>
   )
 }
 

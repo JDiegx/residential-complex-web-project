@@ -3,20 +3,22 @@ import "./Calendar.css"
 import { calendar } from '../../../data/data'
 
 const Calendar = () => {
-    const [days, setDays] = useState(calendar[0])
-    const [hours, setHours] = useState(calendar[1])
+    const [days, setDays] = useState([])
+    const [hours, setHours] = useState([])
 
     useEffect(() => {
         setDays(calendar[0])
         setHours(calendar[1])
-    })
+    }, [calendar])
+
+    const reserve = (day, hour)=> {alert(`Se solicita reserva para el dia ${day} a las ${hour}`)} 
 
     return (
         <table className='calendar-table'>
             <thead className='calendar-table__table-head'>
                 <tr className='calendar-table__days'>
                     <th className='calendar-table-day' >Hours</th>
-                    {days.map((day, i) => <th className='calendar-table-day' key={i}>{day}</th>)}
+                    {days.map((day) => <th className='calendar-table-day' key={day}>{day}</th>)}
                 </tr>
             </thead>
             <tbody className='calendar-table__table-body'>
@@ -27,7 +29,7 @@ const Calendar = () => {
                             {
                                 days.map((i) =>
                                     <td key={i} className='calendar-table-hour'>
-                                        <button>Reservar</button>
+                                        <button onClick={()=> reserve(i, hour)}>Reservar</button>
                                     </td>
                                 )
                             }
