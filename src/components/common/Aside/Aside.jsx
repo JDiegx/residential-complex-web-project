@@ -23,7 +23,6 @@ const Aside = ({isOpen, closeMenu}) => {
                 </li>
             </ul>
         </nav>
-        <p className="aside-menu__address">Calle #90 50-10 - M10</p>
     </aside>
     )
 }
