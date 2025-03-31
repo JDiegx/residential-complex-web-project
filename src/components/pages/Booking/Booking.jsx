@@ -1,5 +1,5 @@
 import React from 'react'
-import "./booking.css"
+import "./Booking.css"
 import Header from '../../common/Header/Header.jsx'
 
 const Booking = () => {
