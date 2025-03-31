@@ -1,10 +1,14 @@
 import React from 'react'
-import Calendar from "../../common/Calendar/Calendar"
+import "./booking.css"
+import Header from '../../common/Header/Header'
 
 const Booking = () => {
   return (
     <>
-    <Calendar />
+      <Header />
+      <div>
+        Booking
+      </div>
     </>
   )
 }
