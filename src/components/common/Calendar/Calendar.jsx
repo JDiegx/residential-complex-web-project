@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import "./Calendar.css"
 import { calendar } from '../../../data/data'
 
-const Calendar = () => {
+const Calendar = ({nameZone}) => {
     const [days, setDays] = useState([])
     const [hours, setHours] = useState([])
 
@@ -11,7 +11,10 @@ const Calendar = () => {
         setHours(calendar[1])
     }, [calendar])
 
-    const reserve = (day, hour)=> {alert(`Se solicita reserva para el dia ${day} a las ${hour}`)} 
+    // onClick={()=> reserve(i, hour)}
+    // const reserve = (day, hour)=> alert(`Se solicita reserva en ${nameZone} para el dia ${day} a las ${hour}`)
+
+    const reserve = (day, hour)=> alert(`Se solicita reserva en ${nameZone} para el dia ${day} a las ${hour}`)
 
     return (
         <table className='calendar-table'>
