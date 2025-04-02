@@ -7,7 +7,7 @@
   </tr>
 </table>
 
-# 🏨 The Wellhall - Resort & Spa Hotel
+# 🏨 Ladera Verde Residential Complex - Surrounded by vegetation, you can breathe tranquility.
 
 Bienvenido a **The Wellhall**, una plataforma web para la gestión de reservas en un Resort & Spa Hotel. Esta aplicación permite a los usuarios conocer más sobre el hotel, explorar opciones de reserva a través del **Dashboard** y gestionar sus reservas en la sección de **Booking**.
 
