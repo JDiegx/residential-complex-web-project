@@ -21,10 +21,10 @@ const Header = () => {
                             <Link to={"/"} className="header__link">Home</Link>
                         </li>
                         <li className="header__list-item">
-                            <Link to={"/dashboard"} className="header__link">Dashboard</Link>
+                            <Link to={"/booking"} className="header__link">Booking</Link>
                         </li>
                         <li className="header__list-item">
-                            <Link to={"/booking"} className="header__link">Booking</Link>
+                            <Link to={"/dashboard"} className="header__link">Dashboard</Link>
                         </li>
                     </ul>
                 </nav>
