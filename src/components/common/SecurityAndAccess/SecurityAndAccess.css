@@ -25,14 +25,64 @@
     color: #1ac79c;
 }
 
+
+@media (min-width: 375px){
+    .security-and-access__item{
+        width: 375px;
+        height: 100px;
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 425px){
+    .security-and-access{
+        height: 410px;
+    }
+
+    .security-and-access__item{
+        width: 425px;
+        height: 100px;
+        font-size: 25px;
+        padding: 0px 25px;
+    }
+
+    .security-and-access__icon{
+        width: 40px;
+        height: 40px;
+        color: #1ac79c;
+    }
+}
+
 @media (min-width: 768px){
     .security-and-access{
         width: 100%;
-        height: 200px;
+        height: 160px;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
     }
-    
+
+    .security-and-access__item{
+        width: 220px;
+        height: 90px;
+        font-size: 20px;
+        padding: 0px 0px;
+    }
+
+    .security-and-access__icon{
+        width: 35px;
+        height: 35px;
+        color: #1ac79c;
+    }
+}
+
+
+@media (min-width: 1024px){
+    .security-and-access__item{
+        width: 300px;
+        height: 90px;
+        font-size: 20px;
+        padding: 0px 0px;
+    }
 }
