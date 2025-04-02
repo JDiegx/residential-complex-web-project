@@ -86,6 +86,11 @@
         font-weight: 700;
         cursor: pointer;
         font-size: 16px;
+        transition: all 0.3s ease;  
+    }
+
+    .header__link:hover{
+        color: rgba(0, 0, 0, 0.5);
     }
 
     .header__address{

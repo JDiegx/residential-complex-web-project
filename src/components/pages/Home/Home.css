@@ -127,13 +127,12 @@
 
 @media (min-width: 1024px){
     .home__content{
-        height: 280px;
+        height: 300px;
     }
     .home__title{
         width: 1000px;
-        font-size: 50px;
+        font-size: 65px;
     }
-
     .home__image{
         height: 450px;
     }
@@ -141,8 +140,20 @@
 
 
 @media (min-width: 1440px){
+    .home__content{
+        height: 300px;
+    }
     .home__image{
         height: 500px;
+    }
+    .home__description{
+        margin-bottom: -25px;
+    }
+    .home__button{
+        margin-bottom: -30px;
+    }
+    .home__content{
+        height: 350px;
     }
 }
 
