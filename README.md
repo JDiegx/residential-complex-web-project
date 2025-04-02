@@ -1,7 +1,7 @@
 ![image](https://github.com/user-attachments/assets/ae1db04f-327c-4b5f-8f79-90c52e984e96)
 <table>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/4d50e80e-4c47-4120-adeb-f1be15e8698a" width="300"></td>
+    <td><img src="https://github.com/user-attachments/assets/cdf0458d-081e-4eb0-884b-997568b52694" width="300"></td>
     <td><img src="https://github.com/user-attachments/assets/1629e88c-125b-4906-8b86-93831e045047" width="300"></td>
     <td><img src="https://github.com/user-attachments/assets/d540071f-982d-4ce6-a6de-18063dbc9813" width="300"></td>
   </tr>
