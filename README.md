@@ -1,6 +1,5 @@
 
 ![Ladera Verde Residential Complex - Surrounded by vegetation, you can breathe tranquility.](![image](https://github.com/user-attachments/assets/f2af78c0-6203-4adc-a659-06008f3a5e86)
-)
 
 <table>
   <tr>
