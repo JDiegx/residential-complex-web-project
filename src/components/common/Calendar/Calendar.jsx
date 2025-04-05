@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import "./Calendar.css"
 import { calendar } from '../../../data/data'
-import betaImage from '/img/1.png'
 
-const Calendar = ({ nameZone }) => {
+const Calendar = ({ zoneObject }) => {
     const [days, setDays] = useState([])
     const [hours, setHours] = useState([])
 
@@ -12,12 +11,12 @@ const Calendar = ({ nameZone }) => {
         setHours(calendar[1])
     }, [calendar])
 
-    const reserve = (day, hour) => alert(`Se solicita reserva en ${nameZone} para el dia ${day} a las ${hour}`)
+    const reserve = (day, hour) => alert(`Se solicita reserva en ${zoneObject.name} para el dia ${day} a las ${hour}`)
 
     return (
         <div className='calendar'>
             <div className='calendar__container-image'>
-                <img src={betaImage} alt="" className='calendar-image' />
+                <img src={`/img/zones/${zoneObject.image}`} alt="" className='calendar-image' />
             </div>
             <table className='calendar-table'>
                 <thead className='calendar-table__head'>
