@@ -6,7 +6,7 @@ const Zone = ({ zone }) => {
         <div className='zone'>
             <img className='zone__image' src={`/img/zones/${zone.image}`} alt={`Image of ${zone.name}`} />
             <div className='zone__information'>
-                <p className='zone__capacity'>{zone.capacity}</p>
+                <p className='zone__capacity'>{`Capacity for ${zone.capacity} people`}</p>
                 <h2 className='zone__title'>{zone.name}</h2>
                 <p className='zone__description'>{zone.description}</p>
             </div>

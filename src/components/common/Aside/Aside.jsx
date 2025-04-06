@@ -16,10 +16,10 @@ const Aside = ({isOpen, closeMenu}) => {
                     <Link to={"/"} className="aside-menu__link">Home</Link>
                 </li>
                 <li className="aside-menu__list-item">
-                    <Link to={"/dashboard"} className="aside-menu__link">Dashboard</Link>
+                    <Link to={"/booking"} className="aside-menu__link">Booking</Link>
                 </li>
                 <li className="aside-menu__list-item">
-                    <Link to={"/booking"} className="aside-menu__link">Booking</Link>
+                    <Link to={"/dashboard"} className="aside-menu__link">Dashboard</Link>
                 </li>
             </ul>
         </nav>
