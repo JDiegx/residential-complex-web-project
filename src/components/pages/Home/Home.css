@@ -1,4 +1,4 @@
-.home{
+.home {
     width: 100%;
     height: auto;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
     overflow: hidden;
 }
 
-.home__content{
+.home__content {
     width: 100%;
     height: 340px;
     padding: 0px 10px;
@@ -18,19 +18,19 @@
     justify-content: space-evenly;
 }
 
-.home__description{
+.home__description {
     color: rgba(87, 87, 87, 0.466);
     font-size: 15px;
     font-weight: 600;
 }
 
-.home__title{
+.home__title {
     width: 320px;
     font-size: 35px;
     font-weight: 800;
 }
 
-.home__button{
+.home__button {
     width: 270px;
     height: 50px;
     background-color: black;
@@ -44,13 +44,13 @@
     transition: ease-in-out 0.3s;
 }
 
-.home__button:hover{
+.home__button:hover {
     background-color: white;
     color: black;
 }
 
-.home__image{
-    width:  400px;
+.home__image {
+    width: 400px;
     height: 250px;
     background-image: url(/img/ladera-verde-residential-complex-image.png);
     background-position: center;
@@ -60,15 +60,18 @@
 .home__zone-container {
     width: 100%;
     overflow-x: auto;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE y Edge */
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE y Edge */
 }
 
 .home__zone-container::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
+    display: none;
+    /* Chrome, Safari, Opera */
 }
 
-.home__zones-section{
+.home__zones-section {
     width: 100%;
     height: 620px;
     display: flex;
@@ -77,7 +80,7 @@
     gap: 5px;
 }
 
-.home__zones-title{
+.home__zones-title {
     font-size: 23px;
     font-weight: 700;
     margin-left: 10px;
@@ -94,10 +97,10 @@
 }
 
 .home__zones::-webkit-scrollbar {
-    display: none; 
+    display: none;
 }
 
-.home__zones-navigation{
+.home__zones-navigation {
     width: 100%;
     height: 40px;
     display: flex;
@@ -108,50 +111,60 @@
     gap: 15px;
 }
 
-.home__zones-button{
+.home__zones-button {
     background-color: transparent;
     border: none;
 }
 
-.home__zones-icon{
+.home__zones-icon {
     width: 35px;
     height: 35px;
     cursor: pointer;
     transition: ease-in-out 0.3s;
 }
 
-@media (min-width: 375px){
-    .home__content{
+@media (min-width: 375px) {
+    .home__content {
         height: 360px;
         padding: 0px 15px;
-    }   
-    .home__description{
+    }
+
+    .home__description {
         font-size: 16px;
     }
-    .home__description br{
+
+    .home__description br {
         display: none;
     }
-    .home__title{
+
+    .home__title {
         font-size: 37px;
     }
-    .home__image{
-        width:  100%;
+
+    .home__image {
+        width: 100%;
         height: 250px;
     }
-    .home__button{
+
+    .home__button {
         font-size: 14px;
     }
-    .home__zones-title{
-        font-size: 25px;
+
+    .home__zones-title {
+        font-size: 26px;
         margin-left: 15px;
     }
 
-    .home__zones {
-        width: 2900px;
-        min-height: 500px;
+    .home__zones-section {
+        height: 690px;
     }
 
-    .home__zones-icon{
+    .home__zones {
+        width: 3500px;
+        min-height: 550px;
+    }
+
+    .home__zones-icon {
         width: 40px;
         height: 40px;
         cursor: pointer;
@@ -159,80 +172,92 @@
     }
 }
 
-@media (min-width: 425px){
-    .home__content{
+@media (min-width: 425px) {
+    .home__content {
         height: 340px;
         padding: 0px 20px;
-    }   
-    .home__description{
+    }
+
+    .home__description {
         font-size: 17px;
     }
-    .home__title{
+
+    .home__title {
         width: 400px;
         font-size: 40px;
     }
-    .home__image{
+
+    .home__image {
         height: 300px;
     }
-    
-    .home__button{
+
+    .home__button {
         width: 300px;
         font-size: 15px;
     }
 }
 
-@media (min-width: 768px){
-    .home__content{
+@media (min-width: 768px) {
+    .home__content {
         height: 270px;
-    } 
-    .home__description{
+    }
+
+    .home__description {
         font-size: 18px;
     }
-    .home__title{
+
+    .home__title {
         width: 700px;
         font-size: 50px;
     }
-    .home__button{
+
+    .home__button {
         width: 330px;
         height: 55px;
         font-size: 15px;
     }
-    .home__image{
+
+    .home__image {
         height: 400px;
         background-image: url(/img/ladera-verde-residential-complex-big-image.png);
     }
 }
 
-@media (min-width: 1024px){
-    .home__content{
+@media (min-width: 1024px) {
+    .home__content {
         height: 300px;
     }
-    .home__title{
+
+    .home__title {
         width: 1000px;
         font-size: 65px;
     }
-    .home__image{
+
+    .home__image {
         height: 450px;
     }
 }
 
-@media (min-width: 1440px){
-    .home__content{
+@media (min-width: 1440px) {
+    .home__content {
         height: 350px;
     }
-    .home__image{
+
+    .home__image {
         height: 500px;
     }
-    .home__description{
+
+    .home__description {
         margin-bottom: -25px;
     }
-    .home__button{
+
+    .home__button {
         margin-bottom: -30px;
     }
 }
 
-@media (min-width: 1790px){
-    .home__image{
+@media (min-width: 1790px) {
+    .home__image {
         height: 750px;
     }
 }
