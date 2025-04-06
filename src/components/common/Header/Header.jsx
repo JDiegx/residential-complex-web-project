@@ -6,9 +6,7 @@ import Aside from "../Aside/Aside";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false)
-
     const openMenu = () => setIsOpen(true)
-
     const closeMenu = () => setIsOpen()
 
     return (

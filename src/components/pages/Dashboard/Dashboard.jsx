@@ -8,12 +8,12 @@ const Dashboard = () => {
   return (
     <>
       <Header />
-      <div className='dashboard'> 
+      <div className='dashboard'>
         {
-          zones.map((zone) => 
-          <div key={zone.id}>
-            <Calendar zoneObject={zone} />
-          </div>)
+          zones.map((zone) =>
+            <div key={zone.id}>
+              <Calendar zoneObject={zone} />
+            </div>)
         }
       </div>
     </>

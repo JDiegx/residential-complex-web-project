@@ -16,7 +16,7 @@ const Booking = () => {
       <Header />
       <div className='booking'>
         {
-          residentialZones.map((zone) => <Zone key={zone.id} zone={zone}/>)
+          residentialZones.map((zone) => <Zone key={zone.id} zone={zone} />)
         }
       </div>
     </>

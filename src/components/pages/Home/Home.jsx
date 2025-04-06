@@ -6,7 +6,7 @@ import { zones } from '../../../data/data.js';
 import Zone from '../../common/Zone/Zone.jsx';
 
 const Home = () => {
-    const zonesRef = useRef(null); // Referencia al contenedor con scroll
+    const zonesRef = useRef(null);
 
     const scrollLeft = () => {
         zonesRef.current.scrollBy({

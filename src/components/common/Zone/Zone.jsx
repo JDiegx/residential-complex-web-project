@@ -1,7 +1,15 @@
 import React from 'react'
 import "./Zone.css"
+import { useNavigate } from 'react-router-dom'
 
 const Zone = ({ zone }) => {
+    const navigateZone = useNavigate()
+
+    const selectedZone = (zone) => {
+        console.log(zone);
+        navigateZone("/reservation-calendar", { state: { zone } })
+    }
+
     return (
         <div className='zone'>
             <img className='zone__image' src={`/img/zones/${zone.image}`} alt={`Image of ${zone.name}`} />
@@ -10,7 +18,7 @@ const Zone = ({ zone }) => {
                 <h2 className='zone__title'>{zone.name}</h2>
                 <p className='zone__description'>{zone.description}</p>
             </div>
-            <button className='zone__book-now-button'>Book now</button>
+            <button className='zone__book-now-button' onClick={() => { selectedZone(zone) }}>Book now</button>
         </div>
     )
 }

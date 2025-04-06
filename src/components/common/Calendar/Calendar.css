@@ -9,15 +9,10 @@
   border: 3px solid rgba(0, 0, 0, 0.151);
 }
 
-.calendar__container-image{
-}
-
 .calendar-image{
   width: 322px;
   height: 325px;
 }
-
-
 
 .calendar-table{
   padding: 7px;
@@ -42,14 +37,10 @@
   border-radius: 5px;
 }
 
-.calendar-table__cell:hover{
-  background-color: rgba(0, 0, 0, 0.377);
-}
 
 .calendar-table__hours {
   display: flex;
 }
-
 
 .calendar-table__button{
   width: 100%;

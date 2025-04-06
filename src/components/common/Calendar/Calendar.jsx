@@ -1,17 +1,26 @@
 import React, { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import "./Calendar.css"
 import { calendar } from '../../../data/data'
 
 const Calendar = ({ zoneObject }) => {
     const [days, setDays] = useState([])
     const [hours, setHours] = useState([])
+    const navigate = useNavigate()
 
     useEffect(() => {
         setDays(calendar[0])
         setHours(calendar[1])
     }, [calendar])
 
-    const reserve = (day, hour) => alert(`Se solicita reserva en ${zoneObject.name} para el dia ${day} a las ${hour}`)
+    const createReservation = (day, hour) => {
+        console.log(day, hour)
+        navigate("/reservation-form", {state: {day, hour}})
+    };  
+
+    const isReserved = (day, hour) => {
+        return zoneObject.reserve.some(reservation => reservation.day === day && reservation.time === hour);
+    };
 
     return (
         <div className='calendar'>
@@ -32,9 +41,20 @@ const Calendar = ({ zoneObject }) => {
                                 <td className='calendar-table__cell'>{hour}</td>
                                 {
                                     days.map((i) =>
-                                        <td key={i} className='calendar-table__cell'>
-                                            <button className='calendar-table__button' onClick={() => reserve(i, hour)}>Reserve</button>
-                                        </td>
+                                        {
+                                            const reserved = isReserved(i, hour)
+                                            return (
+                                                <td className='calendar-table__cell' key={i}>
+                                                    <button 
+                                                        className={`calendar-table__button ${reserved ? 'calendar-table__button--reserved' : ''}`}
+                                                        disabled={reserved}
+                                                        onClick={() => !reserved && createReservation(i, hour)}
+                                                    >
+                                                        {reserved ? "Reserved" : "Reserve"}
+                                                    </button>
+                                                </td>
+                                            )
+                                        }
                                     )
                                 }
                             </tr>
