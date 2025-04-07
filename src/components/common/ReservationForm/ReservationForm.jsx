@@ -35,8 +35,6 @@ const ReservationForm = () => {
             email: reservationEmail
         };
 
-        console.log("📤 Enviando reserva:", reserva);
-
         try {
             const response = await fetch('http://localhost:3000/reservar', {
                 method: 'POST',
@@ -47,7 +45,6 @@ const ReservationForm = () => {
             });
 
             const data = await response.json();
-            console.log("✅ Respuesta del servidor:", data);
 
             if (response.ok) {
                 setStatusMessage("✅ ¡Reserva exitosa!");
@@ -55,7 +52,6 @@ const ReservationForm = () => {
                 setStatusMessage(`⚠️ Error: ${data.mensaje}`);
             }
         } catch (error) {
-            console.error("❌ Error al enviar la reserva:", error);
             setStatusMessage("❌ Error de conexión al servidor.");
         }
     };
@@ -63,38 +59,80 @@ const ReservationForm = () => {
     return (
         <>
             <Header />
-            <section className='section-reservation-form'>
-                <form onSubmit={handleSubmit}>
-                    <label>Name</label>
-                    <input
-                        type="text"
-                        value={reservationName}
-                        onChange={(e) => setReservationName(e.target.value)}
-                        required
-                    />
-                    <br />
-                    <label>Contact</label>
-                    <input
-                        type="text"
-                        value={reservationContact}
-                        onChange={(e) => setReservationContact(e.target.value)}
-                        required
-                        />
-                    <br />
-                    <label>Email</label>
-                    <input type="email" value={reservationEmail} onChange={(e) => setReservationEmail(e.target.value)}required/>
-                    <br />
-                    <label htmlFor="">Zona a reservar: </label>
-                    <input type="text" readOnly value={reservationZone} />
-                    <br />
-                    <label>Hour</label>
-                    <input type="text" readOnly value={reservationHour} />
-                    <br />
-                    <label>Day</label>
-                    <input type="text" readOnly value={reservationDay} />
-                    <br />
-                    <button type='submit'>Book now</button>
-                    {statusMessage && <p>{statusMessage}</p>}
+            <section className="reservation-form">
+                <h2 className="reservation-form__title">Reservation Form</h2>
+                <form className="reservation-form__form" onSubmit={handleSubmit}>
+                    <fieldset className="reservation-form__fieldset">
+                        <legend className="reservation-form__legend">Your Information</legend>
+                        <div className="reservation-form__group">
+                            <label htmlFor="name" className="reservation-form__label">Name</label>
+                            <input
+                                id="name"
+                                type="text"
+                                className="reservation-form__input"
+                                value={reservationName}
+                                onChange={(e) => setReservationName(e.target.value)}
+                                required
+                            />
+                        </div>
+                        <div className="reservation-form__group">
+                            <label htmlFor="contact" className="reservation-form__label">Contact</label>
+                            <input
+                                id="contact"
+                                type="text"
+                                className="reservation-form__input"
+                                value={reservationContact}
+                                onChange={(e) => setReservationContact(e.target.value)}
+                                required
+                            />
+                        </div>
+                        <div className="reservation-form__group">
+                            <label htmlFor="email" className="reservation-form__label">Email</label>
+                            <input
+                                id="email"
+                                type="email"
+                                className="reservation-form__input"
+                                value={reservationEmail}
+                                onChange={(e) => setReservationEmail(e.target.value)}
+                                required
+                            />
+                        </div>
+                    </fieldset>
+                    <fieldset className="reservation-form__fieldset">
+                        <legend className="reservation-form__legend">Reservation Details</legend>
+                        <div className="reservation-form__group">
+                            <label htmlFor="zone" className="reservation-form__label">Zone</label>
+                            <input
+                                id="zone"
+                                type="text"
+                                className="reservation-form__input"
+                                value={reservationZone}
+                                readOnly
+                            />
+                        </div>
+                        <div className="reservation-form__group">
+                            <label htmlFor="hour" className="reservation-form__label">Hour</label>
+                            <input
+                                id="hour"
+                                type="text"
+                                className="reservation-form__input"
+                                value={reservationHour}
+                                readOnly
+                            />
+                        </div>
+                        <div className="reservation-form__group">
+                            <label htmlFor="day" className="reservation-form__label">Day</label>
+                            <input
+                                id="day"
+                                type="text"
+                                className="reservation-form__input"
+                                value={reservationDay}
+                                readOnly
+                            />
+                        </div>
+                    </fieldset>
+                    <button type="submit" className="reservation-form__submit">Book Now</button>
+                    {statusMessage && <p className="reservation-form__status">{statusMessage}</p>}
                 </form>
             </section>
         </>
