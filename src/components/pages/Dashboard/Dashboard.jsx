@@ -11,7 +11,7 @@ const Dashboard = () => {
       <div className='dashboard'>
         {
           zones.map((zone) =>
-            <div key={zone.id}>
+            <div className='dashboard-calendar-content' key={zone.id}>
               <Calendar zoneObject={zone} />
             </div>)
         }
