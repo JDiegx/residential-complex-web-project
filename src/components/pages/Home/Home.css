@@ -152,16 +152,23 @@
 
     .home__zones-title {
         font-size: 26px;
-        margin-left: 15px;
+        margin-left: 20px;
     }
 
     .home__zones-section {
         height: 690px;
+        gap: 10px;
     }
 
     .home__zones {
-        width: 3500px;
+        width: 3400px;
         min-height: 550px;
+    }
+
+    .home__zones-navigation {
+        height: 40px;
+        gap: 50px;
+        padding: 0px 10px;
     }
 
     .home__zones-icon {
@@ -169,31 +176,6 @@
         height: 40px;
         cursor: pointer;
         transition: ease-in-out 0.3s;
-    }
-}
-
-@media (min-width: 425px) {
-    .home__content {
-        height: 340px;
-        padding: 0px 20px;
-    }
-
-    .home__description {
-        font-size: 17px;
-    }
-
-    .home__title {
-        width: 400px;
-        font-size: 40px;
-    }
-
-    .home__image {
-        height: 300px;
-    }
-
-    .home__button {
-        width: 300px;
-        font-size: 15px;
     }
 }
 
@@ -208,7 +190,7 @@
 
     .home__title {
         width: 700px;
-        font-size: 50px;
+        font-size: 55px;
     }
 
     .home__button {
@@ -220,6 +202,25 @@
     .home__image {
         height: 400px;
         background-image: url(/img/ladera-verde-residential-complex-big-image.png);
+    }
+
+    .home__zones-section {
+        height: 620px;
+        gap: 10px;
+    }
+
+    .home__zones {
+        width: 2900px;
+        min-height: 500px;
+    }
+
+    .home__zones::-webkit-scrollbar {
+        display: none;
+    }
+
+    .home__zones-title {
+        font-size: 30px;
+        margin-left: 10px;
     }
 }
 
@@ -235,6 +236,25 @@
 
     .home__image {
         height: 450px;
+    }
+
+    .home__zones-section {
+        height: 670px;
+        gap: 15px;
+    }
+
+    .home__zones {
+        width: 3000px;
+        min-height: 500px;
+    }
+
+    .home__zones::-webkit-scrollbar {
+        display: none;
+    }
+
+    .home__zones-title {
+        font-size: 27px;
+        margin-left: 20px;
     }
 }
 
@@ -253,6 +273,10 @@
 
     .home__button {
         margin-bottom: -30px;
+    }
+
+    .home__zones-title {
+        font-size: 33px;
     }
 }
 

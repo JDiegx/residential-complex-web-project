@@ -12,8 +12,8 @@ const ReservationForm = () => {
     const [reservationHour, setReservationHour] = useState('');
     const [statusMessage, setStatusMessage] = useState('');
 
-    const receptor = useLocation();
-    const { day, hour, nameZone } = receptor.state || {};
+    const receiver = useLocation();
+    const { day, hour, nameZone } = receiver.state || {};
 
     useEffect(() => {
         if (day && hour && nameZone) {
@@ -28,7 +28,7 @@ const ReservationForm = () => {
 
         const reserva = {
             zona: reservationZone,
-            dia: reservationDay, 
+            dia: reservationDay,
             hora: reservationHour,
             nombre: reservationName,
             contacto: reservationContact,
@@ -73,38 +73,27 @@ const ReservationForm = () => {
                         required
                     />
                     <br />
-
                     <label>Contact</label>
                     <input
                         type="text"
                         value={reservationContact}
                         onChange={(e) => setReservationContact(e.target.value)}
                         required
-                    />
+                        />
                     <br />
-
                     <label>Email</label>
-                    <input
-                        type="email"
-                        value={reservationEmail}
-                        onChange={(e) => setReservationEmail(e.target.value)}
-                        required
-                    />
+                    <input type="email" value={reservationEmail} onChange={(e) => setReservationEmail(e.target.value)}required/>
                     <br />
-
                     <label htmlFor="">Zona a reservar: </label>
                     <input type="text" readOnly value={reservationZone} />
                     <br />
                     <label>Hour</label>
                     <input type="text" readOnly value={reservationHour} />
                     <br />
-
                     <label>Day</label>
                     <input type="text" readOnly value={reservationDay} />
                     <br />
-
                     <button type='submit'>Book now</button>
-
                     {statusMessage && <p>{statusMessage}</p>}
                 </form>
             </section>

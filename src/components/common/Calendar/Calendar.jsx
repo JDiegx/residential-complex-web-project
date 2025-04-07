@@ -57,6 +57,11 @@ const Calendar = ({ zoneObject }) => {
     return (
         <div className='calendar'>
             <div className='calendar__container-image'>
+                <div className='calendar__container-text'>
+                    <p className='calendar__capacity'>{`Capacity for ${zoneObject.capacity} people`}</p>
+                    <h2 className='calendar__name'>{zoneObject.name}</h2>
+                    <p className='calendar__description'>{zoneObject.description}</p>
+                </div>
                 <img src={`/img/zones/${zoneObject.image}`} alt="" className='calendar-image' />
             </div>
             <table className='calendar-table'>
