@@ -211,7 +211,7 @@
     }
 
     .home__zones {
-        width: 2900px;
+        width: 3000px;
         min-height: 500px;
     }
 
@@ -245,7 +245,7 @@
     }
 
     .home__zones {
-        width: 3000px;
+        width: 3050px;
         min-height: 500px;
     }
 
@@ -277,7 +277,7 @@
     }
 
     .home__zones-title {
-        font-size: 33px;
+        font-size: 30px;
     }
 }
 
